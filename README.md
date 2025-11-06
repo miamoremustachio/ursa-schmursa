@@ -1,32 +1,32 @@
 ![](screenshot.png)
 
-This is my fork of the Ursa Major rEFInd theme.
+A fork of [csteinforth](https://github.com/csteinforth)'s fork of [Ken Goettler](https://github.com/kgoettler)'s Ursa Major rEFInd theme:
 
-A clean theme for the [rEFInd UEFI Boot Manager](http://www.rodsbooks.com/refind/)
-based on the Ursa Major colorscheme.
+*https://github.com/kgoettler/ursamajor-rEFInd*
 
 Icons are included for a variety of Linux distributions, as well as macOS and 
 Windows.
 
 ## Installation
 
-1. Find the rEFInd directory on your boot volume. For me, it's `/boot/efi/EFI/refind`.
-   (Note: you will likely need to do this as root)
-
-2. Clone this repository to the `themes` directory inside the rEFInd directory.
+1. Locate your rEFInd directory:
 
 ```bash
-cd /boot/efi/EFI/refind
-mkdir themes
-cd themes
-git clone https://github.com/kgoettler/ursamajor-rEFInd.git
+cd /boot/efi/EFI/refind # for most linux based systems
 ```
 
-3. Add the following line or replace an include at the bottom of the `refind.conf` file in the 
-   rEFInd directory
+2. Clone this repo to the `themes` directory inside the rEFInd directory:
 
 ```bash
-include themes/ursamajor-rEFInd/theme.conf
+sudo mkdir themes
+cd themes
+git clone https://github.com/miamoremustachio/ursa-schmursa.git
+```
+
+3. Add the following line at the bottom of the `refind.conf` file:
+
+```bash
+include themes/ursa-schmursa/theme.conf
 ```
 
 ## Configuration
@@ -61,4 +61,4 @@ BOOTX64.EFI BOOTX64.PNG
 
 ## Additional Information
 
-Additional information about configuring rEFInd may be found [here](http://www.rodsbooks.com/refind/configfile.html).
+Additional info about configuring rEFInd may be found [here](http://www.rodsbooks.com/refind/configfile.html).
